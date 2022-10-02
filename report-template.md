@@ -48,6 +48,6 @@ recall
 Summarize the results of the machine learning models, and include a recommendation on the model to use, if any. For example:
 * Which one seems to perform best? How do you know it performs best?
 * Does performance depend on the problem we are trying to solve? (For example, is it more important to predict the `1`'s, or predict the `0`'s? )
+* If you do not recommend any of the models, please justify your reasoning.
 
-If you do not recommend any of the models, please justify your reasoning.
 It seems to me that it's more important overall to predict the 1s than the 0s. Bad borrowers can be costly for a lending platform, so perhaps a model with a higher level of precision would be more valuable in general. That said, both models here scored within 1% of each other in the precision category, so there is not too much difference between them. Recall is a method that is generally prefered when there is a high cost with a false positive, which is actualy not the case here. That being said, because precision is nearly identical with both models, but recall is much higher in the oversampled model, I would reccomend model 2 if I needed to choose between them. Recall is less valuable when sifting through loan applicants, but it seems to create a more accurate model overall and that might balance out the 1% lower precision by selecting more applicants that are actually good borrowers and thereby generating more profit in interest from them. 
